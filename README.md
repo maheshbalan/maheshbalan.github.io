@@ -10,8 +10,8 @@ Research Interests: "Agentic Tech" (Check this out to get an idea what it is: [
   
 PRAVICI CEO : 2013 - Present  
   
-2021 - Present: Built a SaaS platform for Employee Rewards, Coalition Loyalty, and Point Exchange (https://www.pravici.com); Now gaining traction with half a dozen customers onboarded and growing  
-Built Pravici PocketCred (https://www.pocketcred.com), a platform based on Verifiable Credentials for Health, Life Long Learning Credentials and more  
+2021 - Present: Built a SaaS platform for Employee Rewards, Coalition Loyalty, and Point Exchange ( https://www.pravici.com ); Now gaining traction with half a dozen customers onboarded and growing  
+Built Pravici PocketCred ( https://www.pocketcred.com ), a platform based on Verifiable Credentials for Health, Life Long Learning Credentials and more  
 2013-2020: Built a successful CRM consulting business with companies such as General Motors, Zebra Technologies, Quest Software, NXP Semiconductor and Dell Technologies with ARR US$2 million to US$4.5 million  
   
 TECHNICAL DIRECTOR / CONSULTING SERVICES - Oracle/Siebel: 2000-2013  
