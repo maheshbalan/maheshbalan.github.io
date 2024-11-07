@@ -5,7 +5,7 @@ Connect with me in **[Linkedin](https://www.linkedin.com/in/maheshbalan/)**
 
 ### Biography
 
-I am an experienced professional with 38+ years of experience in Customer Relationship Management, Business Intelligence, Loyalty, Rewards, Verifiable Credentials, Decentralized Web Nodes and Blockchain applications. Patent holder and thought leader in the application of distributed ledgers and verifiable credentials in enterprise domains.  
+I am a software professional with 38+ years of experience in Customer Relationship Management, Business Intelligence, Loyalty, Rewards, Verifiable Credentials, Decentralized Web Nodes and Blockchain applications. Patent holder and thought leader in the application of distributed ledgers and verifiable credentials in enterprise domains.  
 Research Interests: "Agentic Tech" (Check this out to get an idea what it is: [https://www.agency.website/](https://www.agency.website/)), the idea that users own their data, their choices and their cognitive consent. I am especially interested in the area of health data and how we can use technologies such as decentralized web nodes and self sovereign identity to allow users to own their health data. Also interested in allied areas of cryptography such as threshold signatures, differential privacy and homomorphic encryption. I would love to collaborate with AI researchers in using Federated Learning for AI using user data from decentralized web nodes.  
   
 PRAVICI CEO : 2013 - Present  
