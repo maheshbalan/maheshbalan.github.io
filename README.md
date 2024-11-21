@@ -32,6 +32,7 @@ Technical Systems Specialist for Phoenix Police Department
 *    [Patent:"Multi-Party Multi Point-Type Decentralized Loyalty System For Promotion And Point Issuance Using A Permission Based Distributed Ledger For Promotion, Point Issuance And Point Redemption”](https://patents.google.com/patent/US11854038B1/en?oq=11854038)
 *   [Paper: Advancing Employee Behavior Analysis through Synthetic Data: Leveraging ABMs, GANs, and Statistical Models for Enhanced Organizational Efficiency](https://doi.org/10.48550/arXiv.2409.14197)
 *   [Paper: Unveiling the Dynamics of Employee Behavior Through Wolframs Cellular Automata](https://doi.org/10.48550/arXiv.2407.09581)
+*   [If Data is the New Oil, Where is your Health Data and Why don't You Have It?](https://www.pocketcred.com/post/if-data-is-the-new-oil-where-is-your-health-data-and-why-don-t-you-have-it)
 *    [Hyperledger Global Forum - Using Verifiable Credentials with Coalition Loyalty, returning control of personal data to members on Next Generation Loyalty using Blockchain](https://youtu.be/u5MnHfyEz9E)
 *    [Hyperledger In Depth: How to bring employees and students back to work and school while respecting their privacy in the COVID era](https://youtu.be/ZLwPNX3cBnE)
 *    [Hyperledger LFPH presentation on Verifiable Credentials](https://bit.ly/3qDK07I)
