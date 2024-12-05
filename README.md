@@ -13,7 +13,7 @@ PRAVICI CEO : 2013 - Present
   
 2021 - Present: Built a blockchain based SaaS platform for Employee Rewards, Coalition Loyalty, and Point Exchange [pravici](https://www.pravici.com); Now gaining traction with half a dozen customers onboarded and growing.
 
-Built [Pravici PocketCred](https://www.pocketcred.com), a platform based on Verifiable Credentials for Health, Life Long Learning Credentials and more using [SMART on FHIR](https://spec.smarthealth.cards/)) standards.
+Built [Pravici PocketCred](https://www.pocketcred.com), a platform based on Verifiable Credentials for Health, Life Long Learning Credentials and more using [SMART on FHIR](https://spec.smarthealth.cards/) standards.
 
 2013-2020: Built a successful CRM consulting business with companies such as General Motors, Zebra Technologies, Quest Software, NXP Semiconductor and Dell Technologies with ARR US$2 million to US$4.5 million.
   
