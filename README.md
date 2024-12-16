@@ -11,7 +11,7 @@ Research Interests: I am currently pursuing a Doctorate at Clarement Graduate Un
   
 PRAVICI CEO : 2013 - Present  
   
-2021 - Present: Built a blockchain based SaaS platform for Employee Rewards, Coalition Loyalty, and Point Exchange [Pravici RnR/TLP/WPX]([https://www.pravici.com](https://www.pravici.com/products); Now gaining traction with half a dozen customers onboarded and growing.
+2021 - Present: Built a blockchain based SaaS platform for Employee Rewards, Coalition Loyalty, and Point Exchange [Pravici RnR/TLP/WPX](https://www.pravici.com/products); Now gaining traction with half a dozen customers onboarded and growing.
 
 Built [Pravici PocketCred](https://www.pocketcred.com), a platform based on Verifiable Credentials for Health, Life Long Learning Credentials and more using [SMART on FHIR](https://spec.smarthealth.cards/) standards.
 
