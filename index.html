@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mahesh Balan — Doctor of Technology candidate (AI &amp; healthcare), health wallets, federated learning, enterprise AI &amp; GenAI delivery, entrepreneurship, and teaching at Claremont Graduate University." />
+  <title>Mahesh Balan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --bg-elevated: #1a222d;
+      --surface: #232f3e;
+      --text: #e8eef4;
+      --text-muted: #9fb0c3;
+      --accent: #3db89d;
+      --accent-dim: #2a8f7a;
+      --border: rgba(255, 255, 255, 0.08);
+      --radius: 12px;
+      --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      --max: 720px;
+      --wide: 960px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+      background-image:
+        radial-gradient(ellipse 120% 80% at 50% -20%, rgba(61, 184, 157, 0.12), transparent),
+        radial-gradient(ellipse 60% 40% at 100% 50%, rgba(61, 184, 157, 0.06), transparent);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      max-width: var(--wide);
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
+
+    header.hero {
+      padding: 3.5rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.75rem 2rem;
+      align-items: flex-start;
+    }
+
+    .hero-photo {
+      flex-shrink: 0;
+    }
+
+    .hero-photo img {
+      display: block;
+      width: 152px;
+      height: 152px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid rgba(61, 184, 157, 0.4);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+    }
+
+    .hero-inner {
+      flex: 1;
+      min-width: 16rem;
+      max-width: var(--max);
+    }
+
+    @media (max-width: 540px) {
+      .hero-layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero-inner {
+        text-align: center;
+      }
+
+      .cta-row,
+      .chip-row {
+        justify-content: center;
+      }
+    }
+
+    h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(2.25rem, 5vw, 3rem);
+      line-height: 1.15;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .contact-line {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin: 0 0 1rem;
+    }
+
+    .contact-line a {
+      font-weight: 500;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin: 0 0 1.25rem;
+      font-weight: 400;
+    }
+
+    .tagline em {
+      color: var(--accent);
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: 1px solid var(--accent-dim);
+      background: rgba(61, 184, 157, 0.15);
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: rgba(61, 184, 157, 0.28);
+      text-decoration: none;
+    }
+
+    .btn-ghost {
+      background: transparent;
+      border-color: var(--border);
+      color: var(--text-muted);
+    }
+
+    .btn-ghost:hover {
+      color: var(--text);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+    }
+
+    .chip {
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.4rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--bg-elevated);
+      color: var(--text-muted);
+    }
+
+    .chip a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .chip a:hover {
+      text-decoration: underline;
+    }
+
+    nav.toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      padding: 1.25rem 0 0;
+      font-size: 0.9rem;
+    }
+
+    nav.toc a {
+      color: var(--text-muted);
+    }
+
+    nav.toc a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 2.75rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0 0 1rem;
+      color: var(--text);
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem;
+      color: var(--text);
+    }
+
+    p {
+      margin: 0 0 1rem;
+      color: var(--text-muted);
+    }
+
+    p strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.35rem 1.5rem;
+      margin: 1.25rem 0;
+      box-shadow: var(--shadow);
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0 0;
+    }
+
+    .pill {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+      background: var(--surface);
+      color: var(--accent);
+      border: 1px solid var(--border);
+    }
+
+    ul.links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.links li {
+      margin: 0 0 0.85rem;
+      padding-left: 1.1rem;
+      position: relative;
+      color: var(--text-muted);
+    }
+
+    ul.links li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.7;
+    }
+
+    ul.links a {
+      font-weight: 500;
+    }
+
+    .timeline {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .timeline li {
+      padding: 0.85rem 0 0.85rem 1.25rem;
+      border-left: 2px solid var(--accent-dim);
+      margin-left: 0.35rem;
+      color: var(--text-muted);
+    }
+
+    .timeline li strong {
+      color: var(--text);
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .skills-line {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin: 0 0 1rem;
+    }
+
+    footer {
+      padding: 2rem 0 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="hero-layout">
+        <div class="hero-photo">
+          <img
+            src="mahesh_balan.jpg"
+            width="152"
+            height="152"
+            alt="Mahesh Balan"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        <div class="hero-inner">
+          <h1>Mahesh Balan</h1>
+          <p class="contact-line">
+            Chandler, AZ · Open to US remote/hybrid · US Citizen<br />
+            <a href="mailto:mahesh@pravici.com">mahesh@pravici.com</a> ·
+            <a href="mailto:mahesh.balan@cgu.edu">mahesh.balan@cgu.edu</a>
+          </p>
+          <p class="tagline">
+            Enterprise delivery leader, founder, and doctoral researcher. I focus on
+            <em>systems that ship</em>—GenAI and classical platforms, health wallets, federated learning, and teaching—so ideas become
+            <em>measurable outcomes</em> for organizations and patients.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="https://linkedin.com/in/maheshbalan">LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/maheshbalan">GitHub</a>
+            <a class="btn btn-ghost" href="Mahesh_Balan_resume_2026.pdf">Résumé (PDF)</a>
+          </div>
+          <div class="chip-row" aria-label="Featured projects">
+            <span class="chip"><a href="https://maheshbalan.github.io/">This site</a></span>
+            <span class="chip"><a href="https://github.com/maheshbalan/myWellWallet">MyWellWallet</a></span>
+            <span class="chip"><a href="https://github.com/CGU-AI4Humanity/OasisCoin">OasisCoin</a></span>
+            <span class="chip"><a href="https://github.com/CGU-AI4Humanity/CGU-Bias-Detector">CGU Bias Detector</a></span>
+            <span class="chip"><a href="https://dev.mynugen.ai/">MyNuGen.ai</a></span>
+          </div>
+        </div>
+      </div>
+      <nav class="toc" aria-label="Page sections">
+        <a href="#summary">Summary</a>
+        <a href="#research">Research</a>
+        <a href="#entrepreneurship">Entrepreneurship</a>
+        <a href="#teaching">Teaching &amp; speaking</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications &amp; links</a>
+      </nav>
+    </header>
+
+    <section id="summary" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Executive summary</h2>
+      <p>
+        Enterprise AI transformation leader and former Oracle/Siebel Technical Director with 30+ years building and scaling
+        revenue-generating consulting organizations and delivering enterprise systems across Fortune 500 and public-sector clients.
+        Founder and CEO of Pravici LLC, scaling consulting to roughly $2M–$4.5M ARR and launching AI-enabled SaaS platforms.
+        Hands-on with GenAI and LLM deployments (ChatGPT API, RAG, vector databases, evaluation, monitoring, governance) and
+        experienced leading customer-facing engineers through workshops, structured adoption, and post-go-live optimization.
+        Published IEEE researcher and U.S. patent holder; doctoral candidate with intensive AI research, model deployment, and
+        teaching at <a href="https://www.cgu.edu/">Claremont Graduate University</a>.
+      </p>
+      <p class="skills-line">
+        <strong>Core themes:</strong> AI success &amp; adoption · enterprise delivery · customer enablement &amp; workshops ·
+        GenAI / LLM &amp; RAG · evaluation &amp; observability · responsible AI &amp; data privacy · APIs · PostgreSQL / pgVector ·
+        cross-functional leadership (sales, product, engineering).
+      </p>
+    </section>
+
+    <section id="research" aria-labelledby="research-heading">
+      <h2 id="research-heading">Doctoral research: health wallets &amp; federated learning</h2>
+      <p>
+        <strong>Doctor of Technology (AI &amp; Healthcare),</strong>
+        <a href="https://www.cgu.edu/">Claremont Graduate University</a> — expected graduation Fall 2026. Two-plus years of intensive
+        AI research, model deployment, and responsible AI study.
+      </p>
+      <div class="card">
+        <p>
+          <strong><a href="https://github.com/maheshbalan/myWellWallet">MyWellWallet</a></strong> — a health wallet I am developing as
+          part of my doctoral work. It now runs the latest <strong>MedGemma</strong> 4B-parameter model locally for natural-language
+          interaction, custom-tuned for medical terminology, alongside a Model Context Protocol
+          (MCP) client connected to a FHIR MCP server I am building (<a href="https://mcp-fhir-server.com/">mcp-fhir-server.com</a>).
+          The goal is a patient-centered, 360-degree view of health data with conversational access throughout.
+        </p>
+        <p>
+          <strong>Federated learning.</strong>
+          <a href="https://www.dropbox.com/scl/fi/zdxdtv20jw1gq1kykepqt/FLAI_ICCE_authored_251029.pdf">IEEE ICCE 2026 — “FLAI Protocol: Decentralized Federated Learning with On-Chain Rewards and sPEG-Based Contribution Scoring”</a>
+          (conference paper). Related session listing:
+          <a href="https://edas.info/p33710#S1571053628">EDAS</a>.
+        </p>
+        <p>
+          I also collaborate with <a href="https://github.com/balkeumlabs/">Balkeum Labs</a> (<a href="https://balkeumlabs.ai/">balkeumlabs.ai</a>)
+          on decentralized protocols for secure federated learning, and with the team on
+          <a href="https://github.com/balkeumlabs/gachi-wp/blob/6d3d964a7ae93384869d683d38f57ea44b0ef3d1/Gachi_WP.pdf">Gachi</a>,
+          a health wallet for Real World Evidence (RWE) and Patient Reported Outcome Measures (PROMs), including SF-36, NASH-CHECK, and HAQ-DI.
+        </p>
+        <p>
+          Broader interests include <strong>agentic technology</strong> and user ownership of data and consent
+          (<a href="https://www.agency.website/">agency.website</a>), verifiable credentials, decentralized web nodes, self-sovereign identity,
+          and cryptography (threshold signatures, differential privacy, homomorphic encryption).
+        </p>
+        <div class="pill-row" aria-hidden="true">
+          <span class="pill">Health wallets</span>
+          <span class="pill">Federated learning</span>
+          <span class="pill">MedGemma 4B</span>
+          <span class="pill">MCP &amp; FHIR</span>
+          <span class="pill">FHIR</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="entrepreneurship" aria-labelledby="entrepreneurship-heading">
+      <h2 id="entrepreneurship-heading">Entrepreneurship &amp; products</h2>
+      <ul class="timeline">
+        <li>
+          <strong>CEO &amp; Founder · Pravici LLC · 2013–present</strong>
+          Scaled an enterprise consulting portfolio to roughly $2M–$4.5M ARR; owned P&amp;L, pipeline, executive relationships, and delivery.
+          Clients have included General Motors, Vauxhall Motors, Opel, Groupe PSA, Zebra Technologies, Quest Software, NXP Semiconductor (Freescale), and realtor.com.
+          Built and deployed Pravici SaaS:
+          <a href="https://www.pravici.com/products">Pravici TLP, RnR, WPX</a>, and
+          <a href="https://www.pocketcred.com/">PocketCred</a> — verifiable credentials for health, lifelong learning, and more using
+          <a href="https://spec.smarthealth.cards/">SMART on FHIR</a>.
+        </li>
+        <li>
+          <strong>Fractional CTO · <a href="https://dev.mynugen.ai/">MyNuGen.ai</a> · 2025–present</strong>
+          Leading ChatGPT-based retrieval-augmented generation (RAG) architecture for the platform’s agentic AI college
+          admissions and coaching stack (OpenAI API, pgVector, similarity modeling, evaluation workflows).
+        </li>
+      </ul>
+      <h3>Additional product engineering (selected)</h3>
+      <ul class="links">
+        <li>Bespoke blockchain loyalty (Ethereum, Hyperledger Fabric) for an automotive OEM.</li>
+        <li>
+          Verifiable credentials and NFT-based learning and employment records using
+          <a href="https://www.imsglobal.org/spec/ob/v3p0">OpenBadges 3.0</a> and
+          <a href="https://www.alchemy.com/blog/comparing-erc-721-to-erc-1155">ERC-721 / ERC-1155</a>,
+          with <a href="https://docs.openzeppelin.com/contracts/3.x/erc721">OpenZeppelin</a>.
+        </li>
+        <li>
+          NFT marketplace for carbon credits on Polygon using
+          <a href="https://www.infura.io/networks/ethereum/polygon">Infura</a> and
+          <a href="https://www.pinata.cloud/">Pinata</a>.
+        </li>
+      </ul>
+    </section>
+
+    <section id="teaching" aria-labelledby="teaching-heading">
+      <h2 id="teaching-heading">Teaching &amp; speaking</h2>
+      <h3>Claremont Graduate University</h3>
+      <ul class="links">
+        <li>Teaching Assistant: <strong>AI for Digital Transformation (IST 601)</strong></li>
+        <li>Teaching Assistant: <strong>AI Practicum (IST 697)</strong></li>
+        <li>Teaching Assistant: <strong>AI for Humanity (IST 698)</strong></li>
+        <li>
+          <a href="https://icce.org/2026/tutorials/">IEEE ICCE 2026 — Conference tutorial</a>
+        </li>
+      </ul>
+      <h3>Industry &amp; community (verifiable credentials, privacy, health)</h3>
+      <ul class="links">
+        <li>
+          <a href="https://youtu.be/u5MnHfyEz9E">Hyperledger Global Forum — Verifiable credentials &amp; coalition loyalty</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/live/ZLwPNX3cBnE">Hyperledger In Depth — Returning to work and school with privacy (COVID era)</a>
+        </li>
+        <li>
+          <a href="https://bit.ly/3qDK07I">Linux Foundation Public Health — Verifiable credentials</a>
+        </li>
+        <li>
+          <a href="https://zoom.us/rec/share/Q0KsQ9DoKuI68uvsWRlXJpl4lSv6ZZDjP0tUpnxkfh_ojApWCrQzgYcLBMn-Kzza.D6i3fhxLpcLY64rF">COVID Credentials Initiative — presentation (from minute 9:30)</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Earlier experience</h2>
+      <ul class="timeline">
+        <li>
+          <strong>Technical Director · Oracle / Siebel · 2000–2013</strong>
+          Led roughly 30 enterprise CRM deployments; partnered with sales and product; coached cross-functional engineering teams.
+          Sample clients: Toyota Financial Services, Nissan Motor Acceptance, Hyundai Motors, Toshiba; Gilead Sciences; Motorola SPS;
+          Cymer (ASML); Honeywell; McAfee; Nationwide Financial Services; Peregrine Systems; Jenny Craig.
+        </li>
+        <li>
+          <strong>SAP BASIS Manager &amp; Technical Systems Specialist · City of Phoenix · 1990–2000</strong>
+          SAP ERP for City of Phoenix Finance: BASIS operations, reliability, security, disaster recovery, and compliance.
+          Phoenix Police: mission-critical 911 dispatch, criminal history, and AFIS systems — high availability, fault tolerance,
+          data integrity, and 24×7 operations in regulated environments.
+        </li>
+      </ul>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <ul class="links">
+        <li><strong>Doctor of Technology candidate (AI &amp; Healthcare),</strong> Claremont Graduate University — expected Fall 2026</li>
+        <li><strong>Master of Science, Computer Science,</strong> Arizona State University, 1996 — GPA 4.0/4.0</li>
+        <li><strong>Bachelor of Engineering, Mechanical Engineering,</strong> Birla Institute of Technology &amp; Science, 1986 — GPA 9.6/10, first in class</li>
+      </ul>
+    </section>
+
+    <section id="publications" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Patent, papers &amp; articles</h2>
+      <ul class="links">
+        <li>
+          <a href="https://patents.google.com/patent/US11854038B1">U.S. Patent US11854038B1 — Multi-party decentralized loyalty on a permissioned ledger</a>
+        </li>
+        <li>
+          <a href="https://www.dropbox.com/scl/fi/zdxdtv20jw1gq1kykepqt/FLAI_ICCE_authored_251029.pdf">IEEE ICCE 2026 — FLAI Protocol (full PDF)</a>
+        </li>
+        <li>
+          <a href="https://doi.org/10.48550/arXiv.2409.14197">Advancing employee behavior analysis through synthetic data (ABMs, GANs, statistical models)</a>
+        </li>
+        <li>
+          <a href="https://doi.org/10.48550/arXiv.2407.09581">Unveiling employee behavior dynamics through Wolfram cellular automata</a>
+        </li>
+        <li>
+          <a href="https://www.pocketcred.com/post/if-data-is-the-new-oil-where-is-your-health-data-and-why-don-t-you-have-it">If data is the new oil, where is your health data?</a>
+        </li>
+        <li>
+          <a href="https://www.pocketcred.com/post/member-as-api-the-interoperability-and-patient-access-final-rule-and-verifiable-credentials">“Member as API” — Interoperability rule &amp; verifiable credentials</a>
+        </li>
+        <li>
+          <a href="https://www.pocketcred.com/post/loyalty-and-health-improving-decisions-about-health-with-a-nudge">Loyalty and health — improving decisions with a nudge</a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© Mahesh Balan · <a href="https://maheshbalan.github.io/">maheshbalan.github.io</a> · <a href="Mahesh_Balan_resume_2026.pdf">Résumé (PDF)</a></p>
+    </footer>
+  </div>
+</body>
+</html>
